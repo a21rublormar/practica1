@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    display: flex;
+    width: 80%;
+    height: 80px;
+    letter-spacing: 6px;
+    background-color: #52796F;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.grid{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 150px;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid #354F52;
+    background-color: #929292;
+    color: white;
+    padding: 30px;
+}
+
+/*Login*/
+
+.grid-index{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 100px;
+    padding-left: 100px;
+    margin-right: 100px;
+}
+
+.container-grid-index{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding: 20px;
+}
+
+.admin-style{
+    text-align: center;
+    display: grid;
+    padding: 25px;
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+img{
+    padding-top: 120px;
+    width: 120px;
+    padding-left: 20px;
+}
+
+label {
+    width: 120px;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Lato';
+    color: black;
+}
+input {
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Lato';
+    padding: 10px;
+}
+form {
+    margin: 25px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    width: 500px;
+    background: #eee;
+}
+div.form-element {
+    margin: 20px 0;
+}
+button {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: yellowgreen;
+    color: black;
+    border: none;
+}
+
+.disconect{
+    padding: 13px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: red;
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+p.success,
+p.error {
+    color: black;
+    font-family: lato;
+    background: yellowgreen;
+    display: inline-block;
+    padding: 2px 10px;
+}
+p.error {
+    background: orangered;
+}
+
+.incidencies{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid #354F52;
+    padding: 25px;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+.incidencies:hover{
+    cursor: pointer;
+    background-color: #CAD2C5;
+}
+
+.grid a{
+   text-decoration: none; 
+}
+
+
+@media only screen and (max-width: 780px) {
+    @media only screen and (max-width: 500px){
+        .container-grid, .incidencies{
+            display: grid;
+            padding: 10px;
+
+        }
+
+        .container-grid{
+          padding-left: 10px;
+          grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr; 
+        }
+
+        
+    }
+    
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .id{
+        grid-area: id;
+    }
+    .depar{
+        grid-area: depar;
+    }
+
+    .desc{
+        grid-area: desc;
+    }
+
+    .data{
+        grid-area: data;
+    }
+    .container-grid ,.incidencies{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'id depar desc data'; 
+    }
+  }
+
+  /*Encabezado*/
+  
